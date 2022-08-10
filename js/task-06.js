@@ -9,7 +9,7 @@ function onInputBlur() {
 }
 function onInputChange(event) {
     console.log(event.currentTarget.value.length);
-    if (event.currentTarget.value.length <= 6) {
+    if (event.currentTarget.value.length == 6) {
         refs.input.classList.add('valid');
         refs.input.classList.remove('invalid');
   } else {
@@ -17,4 +17,3 @@ function onInputChange(event) {
     refs.input.classList.add('invalid');
   }
     }
-
